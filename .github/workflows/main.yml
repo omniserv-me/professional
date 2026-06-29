@@ -15,7 +15,7 @@ jobs:
         run: sudo rm -rf $GITHUB_WORKSPACE/*
 
       - name: "Code checkout"
-        run: actions/checkout
+        uses: actions/checkout@v7
 
       - name: "Stop Caddy"
         run: caddy stop
