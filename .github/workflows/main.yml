@@ -23,5 +23,5 @@ jobs:
 
 
       - name: "Start Caddy"
-        run: caddy start
+        run: sudo caddy start
     
