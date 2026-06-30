@@ -1,3 +1,5 @@
 FROM caddy
-EXPOSE 6000:6000
+EXPOSE 5005
+WORKDIR /app
 COPY . .
+CMD ["caddy", "run", "--config", "Caddyfile"]
