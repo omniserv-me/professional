@@ -2,7 +2,7 @@
 	auto_https off
 }
 
-http://localhost:5005 {
+:5005 { # wildcard for any host. Localhost will not accept if called from remote
 	@notData {
 		not path /.git/*
 		not path /Caddyfile
