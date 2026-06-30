@@ -3,3 +3,10 @@ services:
     build: .
     ports:
       - "5005:5005"
+
+    networks:
+      - omniserv-net
+
+networks:
+  omniserv-net:
+    external: true
